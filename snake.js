@@ -76,8 +76,7 @@ input.value = score;
 //записываем рекорд
 let inputRec = document.querySelector(".points_record");
 let highScore = 0;
-// inputRec.value = highScore;
-// let scoreEnd = 0;
+
 
 
 const updateHighScore = () => {
@@ -89,8 +88,7 @@ const updateHighScore = () => {
   };
   
   window.onload = function () {
-    // canvas = document.querySelector('#canvas');
-    // canvasContext = canvas.getContext('2d');
+
     if (localStorage.getItem('highScore') === null) {
       localStorage.setItem('highScore', 0);
     } else {
